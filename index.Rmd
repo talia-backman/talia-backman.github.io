@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Talia Backman"
 output: html_document
 ---
 ## [HOME](hhtp://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/) | [PAST PROJECTS](http://talia-backman.github.io/)
