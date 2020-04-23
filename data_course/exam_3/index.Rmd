@@ -22,7 +22,7 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-### **Load Libraries needed for analyses**
+### **Load Libraries**
 
 ```{r, message=FALSE}
 library(tidyverse)
