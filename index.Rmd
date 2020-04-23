@@ -24,7 +24,7 @@ div.blue { background-color:#7e8687; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-## [HOME](http://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/) | [DATA COURSE](http://talia-backman.github.io/data_course) | [FINAL PROJECT](http://talia-backman.github.io/final_project)
+## [HOME](http://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/about_me) | [DATA COURSE](http://talia-backman.github.io/data_course) | [FINAL PROJECT](http://talia-backman.github.io/final_project)
 
 # **Talia Backman**
 
