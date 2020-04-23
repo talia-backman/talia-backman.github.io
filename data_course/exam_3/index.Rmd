@@ -4,9 +4,32 @@ author: "Backman"
 date: "4/11/2020"
 output: html_document
 ---
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
+<style>
+div.gray { background-color:#7e8687; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "gray">
+
+
+
+<style>
+div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+## [HOME](http://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/about_me) | [DATA COURSE](http://talia-backman.github.io/data_course) | [FINAL PROJECT](http://talia-backman.github.io/final_project)
+
+## EXAM 3
+
+### **Load Libraries needed for analyses**
 ```{r, message=FALSE}
-#load libraries
 library(tidyverse)
 library(modelr)
 library(GGally)
@@ -16,52 +39,45 @@ library(patchwork)
 library(caret)
 ```
 
+### **Load dataset**
 ```{r}
-#load mtcars dataset
 data("mtcars")
 ```
 
+### **Get an overview of mtcars dataset and possible correlations**
 ```{r, message=FALSE}
-#1. Do an analysis of mtcars dataset
-#get to know your data
 mtcars %>% ggpairs()
 ```
 
-Do a ggpair analysis to see where correlations may be.  Looks like mpg has a correlation with wt and cyl.  
+Looks like mpg has some correlation with wt and cyl.
 
+### **Test different models and look at their pvalues**
+#### Reminder: pvalue<0.05 is significant. Anything over that value shouldn't be used in a model.
 ```{r}
-#test different models
 mod1 <- lm(data=mtcars, formula = mpg ~ wt)
 mod2 <- lm(data=mtcars, formula = mpg ~ wt + cyl)
 mod3 <- lm(data=mtcars, formula = mpg ~ wt * cyl)
 ```
 ```{r}
-#look at summaries for the models and look at intercepts and pvalues
 summary(mod1)
 summary(mod2) 
 summary(mod3)
 ```
 
-All pvalues look significant, they all seem to be good models so we will dig deeper into these models.
+#### All pvalues look significant, they all seem to be good models.
 
-```{r, message=FALSE}
-#look at model diagnostics
-gg_diagnose(mod1)
-gg_diagnose(mod2)
-gg_diagnose(mod3)
-```
-
+### **Compare our current models to see if they differ from eachother**
 ```{r}
-#compare models
 anova(mod1, mod2) 
 anova(mod1, mod3)
 anova(mod2, mod3)
 ```
 
-This shows that all the models are different from eachother because they all have significant pvalues.
+#### All the models are different from eachother.  We know this because they all have significant pvalues (<0.05).
 
+### **Best fit line**
+#### Because nothing has been conclusively leading us to a certain model, we will see which has the best fit line.
 ```{r}
-#which has the best fit line?
 mod1mse <- mean(residuals(mod1)^2)
 mod2mse <- mean(residuals(mod2)^2)
 mod3mse <- mean(residuals(mod3)^2)
@@ -69,10 +85,10 @@ mod3mse <- mean(residuals(mod3)^2)
 mod1mse ; mod2mse ; mod3mse
 ```
 
-mod3mse has the best fit line, so we will use that model.
+#### mod3mse has the best fit line, so we will use that model.
 
+### **Evaluating predictions**
 ```{r}
-#evaluate predictions
 df_mod3 <- add_predictions(mtcars,mod3) 
 df_mod3
 formula(df_mod3)
