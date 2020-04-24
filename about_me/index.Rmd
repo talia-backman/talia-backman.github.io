@@ -1,8 +1,6 @@
 ---
-title: "ABOUT ME"
 output: html_document
 ---
-
 <style type="text/css">
 .main-container {
   max-width: 1800px;
@@ -23,10 +21,11 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-## [HOME](http://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/about_me) | [DATA COURSE](http://talia-backman.github.io/data_course) | [FINAL PROJECT](http://talia-backman.github.io/final_project)
+## [HOME](http://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/about_me) | [DATA COURSE](http://talia-backman.github.io/data_course) | [FINAL PROJECT](http://talia-backman.github.io/final_project) | [RESEARCH](http://talia-backman.github.io/research)
 
-```{r,echo=FALSE}
-knitr::include_graphics("./ragnar.JPG")
+<div style= "float:right;position: relative;top:10px">
+```{r, out.width = "190px",echo=FALSE}
+knitr::include_graphics("./ragnar3.JPG")
 ```
 
 # **ABOUT ME**{#top}
@@ -34,5 +33,13 @@ Hey, I'm Talia Backman.  I recently graduated from Utah Valley University with a
 I was born and raised in Utah and hope to never leave.  It is a beautiful state and I love being outdoors.  My favorite hobbies include running, camping, hiking, skiing, and playing with my pup (his name is Ragnar and to say I love him is an UNDERSTATEMENT).
 Thanks for visiting my github!
 
-## **CV**
-I will put my CV here eventually..
+___
+
+
+## **[Current CV](http://talia-backman.github.io/about_me/Resume.pdf)**
+
+
+___
+
+
+## **[My Github Repositories](https://github.com/talia-backman)**
