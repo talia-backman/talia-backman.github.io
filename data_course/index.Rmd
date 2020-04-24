@@ -25,4 +25,4 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 ## [HOME](http://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/about_me) | [DATA COURSE](http://talia-backman.github.io/data_course) | [FINAL PROJECT](http://talia-backman.github.io/final_project)
 
 # **Past Projects:**
-### [Exam 3](http://talia-backman.github.io/data_course/Exam_3)
+### [Exam 3](http://talia-backman.github.io/data_course/exam_3)
