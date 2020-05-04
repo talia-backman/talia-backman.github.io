@@ -522,8 +522,14 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 </ul>
 <pre class="bash"><code>../../../../../../bin/metabat/runMetaBat.sh EP023.fasta EP025.fasta EP080.fasta EP084.fasta EP109.fasta EP150.fasta EP411.fasta EP416.fasta EP418.fasta EP429.fasta EP023.bam EP025.bam EP080.bam EP084.bam EP109.bam EP150.bam EP411.bam EP416.bam EP418.bam EP429.bam </code></pre>
 </div>
-<div id="contig-binning-command-isnt-working-so-i-am-currently-at-this-step-troubleshooting." class="section level4">
-<h4>Contig binning command isn’t working, so I am currently at this step troubleshooting.</h4>
+<div id="contig-binning-command-isnt-working-so-i-am-currently-at-this-step-troubleshooting.-it-either-says" class="section level4">
+<h4>Contig binning command isn’t working, so I am currently at this step troubleshooting. It either says:</h4>
+</div>
+<div id="number-of-clusters-formed-0" class="section level4">
+<h4>- Number of clusters formed: 0</h4>
+</div>
+<div id="segmentation-fault-core-dumped" class="section level4">
+<h4>- Segmentation fault (core dumped)</h4>
 <hr />
 </div>
 </div>
@@ -534,8 +540,13 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 </div>
 <div id="align-sequences-using-muscle" class="section level3">
 <h3><strong>6. Align Sequences using MUSCLE</strong></h3>
-<pre class="bash"><code>muscle -in seqs.fa -out seqs.afa -maxiters 1 -diags1 -sv</code></pre>
+<div id="awk-command-merges-all-taxa-.fasta-files-into-one-.fasta-file-muscle-command-aligns-multiple-sequences-using-that-file." class="section level4">
+<h4>awk command merges all taxa .fasta files into one .fasta file, muscle command aligns multiple sequences using that file.</h4>
+<pre class="bash"><code>awk '/&gt;/{sub(&quot;&gt;&quot;, &quot;&amp;&quot;FILENAME&quot;_&quot;);sub(/\.fasta/,x)}1' *.fasta &gt; seqs.fa
+
+muscle -in seqs.fa -out seqs.afa -maxiters 1 -diags1 -sv</code></pre>
 <hr />
+</div>
 </div>
 <div id="phylogenetic-trees-using-iqtree" class="section level3">
 <h3><strong>7. Phylogenetic Trees using IQTree</strong></h3>

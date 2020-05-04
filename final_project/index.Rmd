@@ -117,7 +117,9 @@ samtools sort EP429.bam -o EP429_sorted.bam
 ```{bash, eval=FALSE}
 ../../../../../../bin/metabat/runMetaBat.sh EP023.fasta EP025.fasta EP080.fasta EP084.fasta EP109.fasta EP150.fasta EP411.fasta EP416.fasta EP418.fasta EP429.fasta EP023.bam EP025.bam EP080.bam EP084.bam EP109.bam EP150.bam EP411.bam EP416.bam EP418.bam EP429.bam 
 ```
-#### Contig binning command isn't working, so I am currently at this step troubleshooting.
+#### Contig binning command isn't working, so I am currently at this step troubleshooting. It either says: 
+#### - Number of clusters formed: 0
+#### - Segmentation fault (core dumped)
 ___
 ### **5. Isolate Mayfly data**
 ```{bash, eval=FALSE}
@@ -126,7 +128,10 @@ ___
 
 ___
 ### **6. Align Sequences using MUSCLE**
+#### awk command merges all taxa .fasta files into one .fasta file, muscle command aligns multiple sequences using that file.
 ```{bash, eval=FALSE}
+awk '/>/{sub(">", "&"FILENAME"_");sub(/\.fasta/,x)}1' *.fasta > seqs.fa
+
 muscle -in seqs.fa -out seqs.afa -maxiters 1 -diags1 -sv
 ```
 
