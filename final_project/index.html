@@ -386,7 +386,162 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 
 <div id="home-about-me-data-course-final-project-research" class="section level2">
 <h2><a href="http://talia-backman.github.io/">HOME</a> | <a href="http://talia-backman.github.io/about_me">ABOUT ME</a> | <a href="http://talia-backman.github.io/data_course">DATA COURSE</a> | <a href="http://talia-backman.github.io/final_project">FINAL PROJECT</a> | <a href="http://talia-backman.github.io/research">RESEARCH</a></h2>
-<p>This page will have my final project</p>
+<div id="purpose-of-this-rmd" class="section level3">
+<h3><strong>Purpose of this Rmd</strong></h3>
+<div id="the-purpose-of-the-r-markdown-is-to-show-the-workflow-of-my-final-projet-for-my-data-analysis-class.-my-github-repository-has-the-data-i-used-and-the-proper-file-paths.-all-file-paths-are-starting-from-the-final_project-folder." class="section level5">
+<h5>The purpose of the R markdown is to show the workflow of my final projet for my Data Analysis class. My github repository has the data I used and the proper file paths. All file paths are starting from the Final_Project folder.</h5>
+</div>
+<div id="my-github-final-project-repository" class="section level4">
+<h4><a href="https://github.com/talia-backman/Data_Course_BACKMAN/tree/master/Assignments/Final_Project">My Github Final Project Repository</a></h4>
+<div id="all-commands-were-done-in-the-command-line-unless-indicated-otherwise.-all-commands-were-executed-using-these-10-taxa" class="section level5">
+<h5>All commands were done in the command line, unless indicated otherwise. All commands were executed using these 10 taxa:</h5>
+</div>
+<div id="ep-number-is-the-identifier-then-the-family-genus-and-species-are-listed--some-species-are-unknown." class="section level5">
+<h5>* EP number is the identifier, then the Family, genus, and species are listed- some species are unknown.</h5>
+<ul>
+<li>EP023: Ameletidae Ameletus</li>
+<li>EP025: Siphlonuridae Parameletus columbiae</li>
+<li>EP080: Ameletopsidae Chaquihua</li>
+<li>EP084: Siphlonuridae Siphlonurus</li>
+<li>EP109: Siphlaenigmatidae Siphlaenigma janae</li>
+<li>EP150: Dipteromimidae Dipteromimus<br />
+</li>
+<li>EP411: Siphlonuridae Siphlonurus croaticus</li>
+<li>EP416: Siphlonuridae Siphlonurus lacustris</li>
+<li>EP418: Siphlonuridae Siphlonurus aestivalis</li>
+<li>EP429: Siphlonuridae Siphlonisca aerodromia.</li>
+</ul>
+</div>
+<div id="this-workflow-only-shows-the-commands-done-for-ep429-siphlonuridae-siphlonisca-aerodromia." class="section level5">
+<h5>This workflow only shows the commands done for EP429: Siphlonuridae Siphlonisca aerodromia.</h5>
+<hr />
+</div>
+</div>
+</div>
+<div id="introduction" class="section level3">
+<h3><strong>Introduction</strong></h3>
+<div id="siphlonuridae-is-a-family-of-mayflies-order-ephemeroptera-that-are-nicknamed-the-primitive-minnow-mayfly-family.-the-family-consists-of-four-genera-edmundsius-day-1953-parameletus-bengtsson-1908-siphlonisca-needham-1909-and-siphlonurus-eaton-1868.-within-the-four-genera-are-twenty-six-described-species.-while-past-molecular-evidence-suggests-that-siphlonuridae-is-monophyletic-and-includes-dipteromimidae-ogden-whiting-2005-there-is-also-research-suggesting-that-siphlonuridae-is-the-sister-group-to-dipteromimidae-tojo-matsukawa-2003.-determining-monophyly-of-the-two-taxa-would-help-clarify-and-give-a-better-understanding-to-the-overall-phylogeny-of-mayflies.-the-conflicting-arguments-are-both-backed-by-molecular-data-so-this-study-aims-to-use-metagenomic-ngs-data-in-order-to-generate-more-conclusive-evidence-supporting-either-monophyly-or-paraphyly." class="section level5">
+<h5>Siphlonuridae is a family of mayflies (order Ephemeroptera) that are nicknamed the Primitive Minnow Mayfly family. The family consists of four genera: Edmundsius (Day, 1953), Parameletus (Bengtsson, 1908), Siphlonisca (Needham, 1909), and Siphlonurus (Eaton, 1868). Within the four genera are twenty six described species. While past molecular evidence suggests that Siphlonuridae is monophyletic and includes Dipteromimidae (Ogden &amp; Whiting, 2005), there is also research suggesting that Siphlonuridae is the sister group to Dipteromimidae (Tojo &amp; Matsukawa, 2003). Determining monophyly of the two taxa would help clarify and give a better understanding to the overall phylogeny of mayflies. The conflicting arguments are both backed by molecular data, so this study aims to use metagenomic NGS data in order to generate more conclusive evidence supporting either monophyly or paraphyly.</h5>
+<hr />
+</div>
+</div>
+</div>
+<div id="analyizing-metagenomic-ngs-using-the-command-line" class="section level2">
+<h2><strong>Analyizing Metagenomic NGS Using the Command Line</strong></h2>
+<div id="quality-control-using-trimmomatic" class="section level3">
+<h3><strong>1. Quality Control using Trimmomatic</strong></h3>
+<ul>
+<li>These parameters were used for quality control:</li>
+<li>LEADING:3- Cut bases off the start of a read, if below a threshold quality</li>
+<li>TRAILING:3- Cut bases off the end of a read, if below a threshold quality</li>
+<li>SLIDINGWINDOW:4:20- Performs a sliding window trimming approach. It starts scanning at the 5‟ end and clips the read once the average quality within the window falls below a threshold.</li>
+<li>MINLEN:50- Drop the read if it is below a specified length</li>
+<li>TOPHRED33- Convert quality scores to Phred-33</li>
+</ul>
+<pre class="bash"><code>java -jar ./Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 6 ./Taxa/EP429/EP429_R1_001.fastq ./Taxa/EP429/EP429_R2_001.fastq ./Taxa/EP429/EP429_R1_trimmed.fastq ./Taxa/EP429/EP429_R1un_trimmed.fastq ./Taxa/EP429/EP429_R2_trimmed.fastq ./Taxa/EP429/EP429_R2un_trimmed.fastq LEADING:3 TRAILING:3 SLIDINGWINDOW:4:20 MINLEN:50 TOPHRED33</code></pre>
+<div id="this-command-created-4-new-files-on-top-of-the-2-raw-files.-now-all-the-files-we-have-are" class="section level4">
+<h4>This command created 4 new files (on top of the 2 raw files). Now all the files we have are:</h4>
+<ul>
+<li>EP429_R1_001.fastq</li>
+<li>EP429_R2_001.fastq</li>
+<li>EP429_R1_trimmed.fastq</li>
+<li>EP429_R2_trimmed.fastq</li>
+<li>EP429_R1un_trimmed.fastq</li>
+<li>EP429_R2un_trimmed.fastq</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="look-at-trimmed-reads" class="section level3">
+<h3><strong>2. Look at trimmed reads</strong></h3>
+<div id="forward-reads" class="section level4">
+<h4>Forward Reads</h4>
+<pre class="bash"><code>cat Taxa/EP429/EP429_R1_trimmed.fastq | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]&gt;max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total,unique,unique*100/total,maxRead,count[maxRead],count[maxRead]*100/total}'</code></pre>
+<div id="total-number-of-reads-224973" class="section level5">
+<h5>Total number of reads= 224,973</h5>
+</div>
+<div id="total-number-unique-reads-78527" class="section level5">
+<h5>Total number unique reads= 78,527</h5>
+</div>
+<div id="percentage-of-unique-reads-34.9051" class="section level5">
+<h5>Percentage of unique reads= 34.9051</h5>
+</div>
+<div id="most-abundant-sequence-atatgtacaccttgaagaaaaatatgtttttggtatgtatgtctaggatattattaggccatttca" class="section level5">
+<h5>Most abundant sequence= ATATGTACACCTTGAAGAAAAATATGTTTTTGGTATGTATGTCTAGGATATTATTAGGCCATTTCA</h5>
+</div>
+<div id="ttcatttttctggtgacttttcgctgctggagaatgcaaaataattttgtagacatgtctaggaaattatttttggtatgaata" class="section level5">
+<h5>TTCATTTTTCTGGTGACTTTTCGCTGCTGGAGAATGCAAAATAATTTTGTAGACATGTCTAGGAAATTATTTTTGGTATGAATA</h5>
+</div>
+<div id="frequency-of-most-abundant-sequence-370" class="section level5">
+<h5>Frequency of most abundant sequence= 370</h5>
+</div>
+<div id="percentage-of-total-in-file-0.164464" class="section level5">
+<h5>Percentage of total in file= 0.164464</h5>
+<hr />
+</div>
+</div>
+</div>
+<div id="metagenome-assembly-using-spades" class="section level3">
+<h3><strong>3. Metagenome Assembly Using SPAdes</strong></h3>
+<pre class="bash"><code>spades.py --meta --pe1-1 ./Taxa/EP429/EP429_R1_trimmed.fastq --pe1-2 ./Taxa/EP429/EP429_R2_trimmed.fastq -o spades_output</code></pre>
+<div id="this-created-an-output-file-called-spades_output.-within-this-file-we-are-specifically-interested-in-one-scaffolds.fasta.-because-i-am-running-10-taxa-each-scaffolds.fasta-was-renamed-epnumber_scaffolds.fasta" class="section level4">
+<h4>This created an output file called spades_output. Within this file we are specifically interested in one: scaffolds.fasta. Because I am running 10 taxa, each scaffolds.fasta was renamed &quot;EP<em>number</em>_scaffolds.fasta</h4>
+<hr />
+</div>
+</div>
+<div id="contig-binning-using-metabat" class="section level3">
+<h3><strong>4. Contig Binning using MetaBAT</strong></h3>
+<div id="in-order-to-start-contig-binnig-scaffolds.fasta-had-to-be-converted-into-a-.bam-file-index.-i-used-the-package-bwa-and-samtools-for-this." class="section level4">
+<h4>In order to start contig binnig, scaffolds.fasta had to be converted into a .bam file index. I used the package bwa and samtools for this.</h4>
+<ul>
+<li>Create reference index (bwa index is the command, -p reference is the output name for future commands, -a bwtsw is used because it is a large dataset, ref.fa is the input)</li>
+</ul>
+<pre class="bash"><code>bwa index -p reference -a bwtsw ./Taxa/all_taxa_scaffolds/ref.fa</code></pre>
+<ul>
+<li>Align the reference with taxa, convert it into .bwa format</li>
+</ul>
+<pre class="bash"><code>bwa aln reference EP429.fasta &gt; EP429.bwa</code></pre>
+<ul>
+<li>Convert the .bwa taxa files to .sam format (which will be a large file)</li>
+</ul>
+<pre class="bash"><code>bwa samse reference EP429.bwa EP429.fasta &gt; EP429.sam</code></pre>
+<ul>
+<li>Convert the .sam taxa files to .bam (for smaller size files to work with)</li>
+</ul>
+<pre class="bash"><code>samtools view -bT reference EP429.sam &gt; EP429.bam</code></pre>
+<ul>
+<li>Sort .bam files</li>
+</ul>
+<pre class="bash"><code>samtools sort EP429.bam -o EP429_sorted.bam</code></pre>
+<ul>
+<li>Summarize mapping files/ calculate coverage</li>
+</ul>
+<pre class="bash"><code>../../../../../../bin/jgi_summarize_bam_contig_depths --outputDepth depth.txt --pairedContigs paired.txt *.bam</code></pre>
+<ul>
+<li>Finally.. Run the actual contig binning step!!</li>
+</ul>
+<pre class="bash"><code>../../../../../../bin/metabat/runMetaBat.sh EP023.fasta EP025.fasta EP080.fasta EP084.fasta EP109.fasta EP150.fasta EP411.fasta EP416.fasta EP418.fasta EP429.fasta EP023.bam EP025.bam EP080.bam EP084.bam EP109.bam EP150.bam EP411.bam EP416.bam EP418.bam EP429.bam </code></pre>
+</div>
+<div id="contig-binning-command-isnt-working-so-i-am-currently-at-this-step-troubleshooting." class="section level4">
+<h4>Contig binning command isn’t working, so I am currently at this step troubleshooting.</h4>
+<hr />
+</div>
+</div>
+<div id="isolate-mayfly-data" class="section level3">
+<h3><strong>5. Isolate Mayfly data</strong></h3>
+<pre class="bash"><code></code></pre>
+<hr />
+</div>
+<div id="align-sequences-using-muscle" class="section level3">
+<h3><strong>6. Align Sequences using MUSCLE</strong></h3>
+<pre class="bash"><code>muscle -in seqs.fa -out seqs.afa -maxiters 1 -diags1 -sv</code></pre>
+<hr />
+</div>
+<div id="phylogenetic-trees-using-iqtree" class="section level3">
+<h3><strong>7. Phylogenetic Trees using IQTree</strong></h3>
+<pre class="bash"><code></code></pre>
+<hr />
+</div>
 </div>
 
 
