@@ -33,7 +33,7 @@ I'm Talia! I'm currently a PhD student at the University of Utah in Dr. Talia Ka
 In Fall 2025, I will be starting a postdoc position in the TIDAL (Dr. Geoffrey Zahn's lab) at Mary & William. Yes, I know it's William & Mary, but I insist on being a insufferable feminist :) 
 
 ___
-## <span style="font-size: 14px;">**[Current CV](http://talia-backman.github.io/about_me/CV_March2025.pdf)**</span>
+## <span style="font-size: 14px;">**[Current CV](https://github.com/talia-backman/talia-backman.github.io/CV_March2025.pdf)**</span>
 
 
 ## <span style="font-size: 14px;">**[My Github Repositories](https://github.com/talia-backman)**</span>
