@@ -21,13 +21,13 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-## [HOME](http://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/about_me) | [DATA COURSE](http://talia-backman.github.io/data_course) | [FINAL PROJECT](http://talia-backman.github.io/final_project) | [RESEARCH](http://talia-backman.github.io/research)
+## [HOME](http://talia-backman.github.io/) | [ABOUT ME](http://talia-backman.github.io/about_me) | [PUBLICATIONS](http://talia-backman.github.io/publications)
 
 # **Talia Backman's Website**
 
 <div style= "float:right;position: relative;top:20px">
 ```{r, out.width = "500px",echo=FALSE}
-knitr::include_graphics("./lake.jpg")
+knitr::include_graphics("./IMG_6974.jpg")
 ```
 
 <br><br><br><br><br><br><br><br><br>
@@ -42,7 +42,6 @@ ___
 ## **Contact Info:**
 
 ### Talia Backman<br>
-### (385)268-8877
 ### talia.backman@gmail.com
 <br><br><br>
 
