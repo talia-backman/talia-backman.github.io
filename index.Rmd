@@ -21,8 +21,11 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-## [HOME](http://talia-backman.github.io/) | [PUBLICATIONS](http://talia-backman.github.io/publications) | [NEWS](http://talia-backman.github.io/news)
-
+[HOME](http://talia-backman.github.io/) | 
+[PUBLICATIONS](http://talia-backman.github.io/publications) | 
+[NEWS](http://talia-backman.github.io/news)
+<br>
+<br>
 <div style="float: right; margin-left: 15px; margin-bottom: 10px;">
   <img src="./IMG_6974.jpg" alt="Description of image" width="200">
 </div>
