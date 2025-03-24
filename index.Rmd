@@ -21,7 +21,7 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-## [HOME](http://talia-backman.github.io/) | [PUBLICATIONS](http://talia-backman.github.io/publications)
+## [HOME](http://talia-backman.github.io/) | [PUBLICATIONS](http://talia-backman.github.io/publications) | [NEWS](http://talia-backman.github.io/news)
 
 <div style="float: right; margin-left: 15px; margin-bottom: 10px;">
   <img src="./IMG_6974.jpg" alt="Description of image" width="200">
@@ -30,10 +30,10 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
   About Me
 </p>
 I'm Talia! I'm currently a PhD student at the University of Utah in Dr. Talia Karasov's lab. I investigate how bacterial pathogens compete to infect their plant host. 
-In Fall 2025, I will be starting a postdoc position in the TIDAL (Dr. Geoffrey Zahn's lab) at Mary & William. Yes, I know it's William & Mary, but I insist on being a insufferable feminist :) 
+In Fall 2025, I will be starting a postdoc position in the TIDAL lab (Dr. Geoffrey Zahn's lab) at Mary & William. Yes, I know it's William & Mary, but I insist on being an insufferable feminist :) 
 
 ___
-## <span style="font-size: 14px;">**[Current CV](https://github.com/talia-backman/talia-backman.github.io/CV_March2025.pdf)**</span>
+## <span style="font-size: 14px;">**[Download my current CV](./CV_March2025.pdf)**</span>
 
 
 ## <span style="font-size: 14px;">**[My Github Repositories](https://github.com/talia-backman)**</span>
