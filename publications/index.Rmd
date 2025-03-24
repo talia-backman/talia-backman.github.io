@@ -21,9 +21,9 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-[HOME](http://talia-backman.github.io/) | 
-[PUBLICATIONS](http://talia-backman.github.io/publications) | 
-[NEWS](http://talia-backman.github.io/news)
+<span style="font-size: 20px;">[HOME](http://talia-backman.github.io/) | 
+<span style="font-size: 20px;">[PUBLICATIONS](http://talia-backman.github.io/publications) | 
+<span style="font-size: 20px;">[NEWS](http://talia-backman.github.io/news)
 
 <p style="text-align: left; font-size: 16px; font-weight: bold;">
   Publications in preparation
