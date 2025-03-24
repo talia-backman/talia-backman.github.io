@@ -1,0 +1,39 @@
+---
+output: html_document
+---
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<style>
+div.gray { background-color:#7e8687; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "gray">
+
+
+
+<style>
+div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+<span style="font-size: 20px;">[HOME](http://talia-backman.github.io/) | 
+<span style="font-size: 20px;">[PUBLICATIONS](http://talia-backman.github.io/publications) | 
+<span style="font-size: 20px;">[NEWS](http://talia-backman.github.io/news)
+
+<img src="./frontpage.jpg" style="width:50%; float:right; margin-left:10px; margin-top:5em;">
+
+<br>
+<br>
+<p style="text-align: left; font-size: 16px; font-weight: bold; text-decoration: underline;">
+  See one of articles describing my first author research published in <em>Science</em>:
+</p>
+## <span style="font-size: 14px;">**[<em>Science</em> Publication](https://www.science.org/doi/10.1126/science.ado0713)**</span>
+## <span style="font-size: 14px;">**[University of Utah: School of Biological Sciences Article](https://www.biology.utah.edu/uncategorized/tailocins-the-next-generation-of-antibiotics-might-just-come-from-understanding-the-viruses-that-infect-bacteria/)**</span>
+## <span style="font-size: 14px;">**[University of Utah: @theU Article](https://attheu.utah.edu/facultystaff/the-scary-yet-promising-world-of-phages-the-pathogens-pathogen/)**</span>
+## <span style="font-size: 14px;">**[earth.com Article](https://www.earth.com/news/bacteriophages-how-bacteria-harness-viruses-to-attack-competitors/)**</span>
+## <span style="font-size: 14px;">**[TWiM Podcast, second half.](https://www.microbe.tv/twim/twim-316/)**</span>
