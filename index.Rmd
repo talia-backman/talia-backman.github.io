@@ -32,8 +32,10 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 <p style="text-align: left; font-size: 16px; font-weight: bold;">
   About Me
 </p>
+<p style="text-align: left; font-size: 14px;">
 I'm Talia! I'm currently a PhD student at the University of Utah in Dr. Talia Karasov's lab. I investigate how bacterial pathogens compete to infect their plant host. 
 In Fall 2025, I will be starting a postdoc position in the TIDAL lab (Dr. Geoffrey Zahn's lab) at Mary & William. Yes, I know it's William & Mary, but I insist on being an insufferable feminist :) 
+</p>
 
 ___
 ## <span style="font-size: 14px;">**[Download my current CV](./CV_March2025.pdf)**</span>
