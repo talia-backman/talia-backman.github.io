@@ -28,3 +28,17 @@ div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
 <span style="font-size: 20px;">[Contact](http://talia-backman.github.io/contact)
 <br>
 <br>
+<div style="float: right; margin-left: 15px; margin-bottom: 10px;">
+  <img src="../BackmanTalia.jpg" alt="Description of image" width="200">
+</div>
+<p style="text-align: left; font-size: 16px; font-weight: bold;">
+  Contact me
+</p>
+<p style="text-align: left; font-size: 14px; font-weight: bold;">
+  Talia Backman, PhD
+</p>
+<p style="text-align: left; font-size: 14px;">
+  nbackman@wm.edu
+</p>
+
+</div>

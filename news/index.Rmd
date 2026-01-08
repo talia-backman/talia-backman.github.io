@@ -1,6 +1,7 @@
 ---
 output: html_document
 ---
+
 <style type="text/css">
 .main-container {
   max-width: 1800px;
@@ -10,30 +11,100 @@ output: html_document
 </style>
 
 <style>
-div.gray { background-color:#7e8687; border-radius: 5px; padding: 20px;}
+div.gray { background-color:#7e8687; border-radius: 5px; padding: 20px; }
+div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px; }
+
+/* Two-column layout: text on left, photos on right */
+.news-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Photo column styling */
+.news-photos img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Mobile: stack photos under content */
+@media (max-width: 900px) {
+  .news-layout {
+    grid-template-columns: 1fr;
+  }
+  .news-photos {
+    order: 2;
+  }
+}
 </style>
-<div class = "gray">
 
+<div class="gray">
+<div class="blue">
 
+<span style="font-size: 20px;">[Home](http://talia-backman.github.io/) |
+<span style="font-size: 20px;">[About](http://talia-backman.github.io/about) |
+<span style="font-size: 20px;">[Publications](http://talia-backman.github.io/publications) | 
+<span style="font-size: 20px;">[News](http://talia-backman.github.io/news) | 
+<span style="font-size: 20px;">[Contact](http://talia-backman.github.io/contact)
 
-<style>
-div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
+<br><br>
 
-<span style="font-size: 20px;">[HOME](http://talia-backman.github.io/) | 
-<span style="font-size: 20px;">[PUBLICATIONS](http://talia-backman.github.io/publications) | 
-<span style="font-size: 20px;">[NEWS](http://talia-backman.github.io/news)
+<div class="news-layout">
 
-<img src="./frontpage.jpg" style="width:30%; float:right; margin-left:10px; margin-top:5em;">
+  <div class="news-content">
 
-<br>
-<br>
-<p style="text-align: left; font-size: 16px; font-weight: bold; text-decoration: underline;">
-  See one of articles describing my first author research published in <em>Science</em>:
+<p style="text-align: left; font-size: 14px; font-weight: bold;">
+This page highlights recent announcements, publications, talks, and milestones in my research and scientific career.
 </p>
-## <span style="font-size: 14px;">**[<em>Science</em> Publication](https://www.science.org/doi/10.1126/science.ado0713)**</span>
-## <span style="font-size: 14px;">**[University of Utah: School of Biological Sciences Article](https://www.biology.utah.edu/uncategorized/tailocins-the-next-generation-of-antibiotics-might-just-come-from-understanding-the-viruses-that-infect-bacteria/)**</span>
-## <span style="font-size: 14px;">**[University of Utah: @theU Article](https://attheu.utah.edu/facultystaff/the-scary-yet-promising-world-of-phages-the-pathogens-pathogen/)**</span>
-## <span style="font-size: 14px;">**[earth.com Article](https://www.earth.com/news/bacteriophages-how-bacteria-harness-viruses-to-attack-competitors/)**</span>
-## <span style="font-size: 14px;">**[TWiM Podcast, second half.](https://www.microbe.tv/twim/twim-316/)**</span>
+
+___
+<br>
+
+**JANUARY 2026**
+<br><br>
+Started my postdoc position and Mary & William
+<br><br>
+
+___
+<br>
+
+**JUNE 2025**
+<br><br>
+Successfully defended my PhD! (and cried my eyes out)<br>
+Photo features my PhD supervisor, "big" Talia Karasov
+<br><br>
+
+___
+<br>
+
+**JUNE 2024**
+<br><br>
+My first author manuscript on tailocin conservation and function in wild plant pathogens is published in *Science*.🌱
+
+**Links:**  
+📄 [Journal article (*Science*)](https://www.science.org/doi/10.1126/science.ado0713)  
+🧪 [Code & analysis (GitHub)](https://github.com/talia-backman/Ps1524_tailocin)  
+
+Media coverage:  
+📰 [University of Utah](https://www.biology.utah.edu/uncategorized/tailocins-the-next-generation-of-antibiotics-might-just-come-from-understanding-the-viruses-that-infect-bacteria/)  
+📰 [At the U](https://attheu.utah.edu/facultystaff/the-scary-yet-promising-world-of-phages-the-pathogens-pathogen/)  
+📰 [Earth.com](https://www.earth.com/news/bacteriophages-how-bacteria-harness-viruses-to-attack-competitors/)  
+
+Podcast discussion:  
+🎧 [This Week in Microbiology (TWIM 316)](https://www.microbe.tv/twim/twim-316/) — discussion begins in the second half
+
+  </div>
+
+  <div class="news-photos">
+  <img src="./postdoc.jpg" alt="Front page">
+  <img src="./defense.jpg" alt="Starting postdoc">
+  <img src="./frontpage.jpg" alt="PhD defense">
+  </div>
+
+</div> <!-- news-layout -->
+
+</div> <!-- blue -->
+</div> <!-- gray -->

@@ -1,0 +1,55 @@
+---
+output: html_document
+---
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<style>
+div.gray { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "gray">
+
+
+
+<style>
+div.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+<span style="font-size: 20px;">[Home](http://talia-backman.github.io/) |
+<span style="font-size: 20px;">[About](http://talia-backman.github.io/about) |
+<span style="font-size: 20px;">[Publications](http://talia-backman.github.io/publications) | 
+<span style="font-size: 20px;">[News](http://talia-backman.github.io/news) | 
+<span style="font-size: 20px;">[Contact](http://talia-backman.github.io/contact)
+<br>
+<br>
+<div style="float: right; margin-left: 15px; margin-bottom: 10px;">
+  <img src="../BackmanTalia.jpg" alt="Description of image" width="200">
+</div>
+<p style="text-align: left; font-size: 18px; font-weight: bold;">
+  About Me
+</p>
+<p style="text-align: left; font-size: 12px;">
+I’m Talia Backman, a microbial ecologist studying how bacteria compete, coexist, and assemble within host-associated communities.<br>
+
+I am currently a postdoctoral fellow in the 
+<a href="https://gzahn.github.io/" target="_blank" rel="noopener">TIDAL Lab</a> 
+at Mary & William (and yes, I insist on saying Mary & William), working with Dr. Geoffrey Zahn. My research integrates microbial community ecology with functional genomics to understand how microbial interactions scale from pairwise competition to community-level assembly in plant hosts. I’m also expanding into community ecology using 16S datasets to characterize how microbial community composition varies across environmental gradients and habitats, and to assess spatial patterns.<br>
+
+I completed my PhD in Molecular, Cellular, and Evolutionary Biology at the University of Utah in 
+<a href="https://tkarasovlab.org/" target="_blank" rel="noopener">Dr. Talia Karasov’s lab</a>, 
+where I investigated evolutionary trade-offs in phage-derived bacteriocins (tailocins) across natural populations of plant-associated bacteria.
+</p>
+
+___
+<p style="text-align: left; font-size: 18px; font-weight: bold;">
+  CV & Code
+</p>
+## <span style="font-size: 16px;">**[CV](https://docs.google.com/document/d/1NmoQ0LqRecd7NPIZX8zaRJPFfG_P8sYD2s2odYQ3khY/view)**</span>
+
+## <span style="font-size: 16px;">**[My Github Repositories](https://github.com/talia-backman)**</span>
