@@ -1,0 +1,59 @@
+---
+output: html_document
+---
+
+<style type="text/css">
+.main-container { max-width: 1800px; margin-left: auto; margin-right: auto; }
+
+/* Containers */
+.gray { background-color:#7e8687; border-radius: 5px; padding: 20px; }
+.blue { background-color:#9dc9d1; border-radius: 5px; padding: 20px; }
+
+/* Typography */
+.blue, .blue p, .blue li { font-size: 14px; line-height: 1.45; }
+.section-title { font-size: 18px; font-weight: 700; margin: 0 0 10px 0; }
+.year { font-weight: 700; margin: 10px 0 6px 0; }
+.cite { margin: 0 0 12px 0; }
+
+/* Nav */
+.site-nav { font-size: 18px; margin-bottom: 14px; }
+.site-nav a { text-decoration: none; }
+.site-nav a:hover { text-decoration: underline; }
+</style>
+
+<div class="gray">
+<div class="blue">
+
+<div class="site-nav">
+<a href="http://talia-backman.github.io/">Home</a> |
+<a href="http://talia-backman.github.io/about">About</a> |
+<a href="http://talia-backman.github.io/publications">Publications</a> |
+<a href="http://talia-backman.github.io/news">News</a> |
+<a href="http://talia-backman.github.io/contact">Contact</a>
+</div>
+
+<p class="section-title"><em>In Review</em></p>
+
+<p class="year">2025</p>
+<p class="cite">
+<b>Backman, Talia</b>, Emma Caullireau, Jiajun Cui, Ella Bleak, Efthymia Symeonidi, Aubrey Hawks, Allison M. Perkins, Ilja Bezrukov, Martin Horvath, Jesse R. Lasky, Sergio M. Lattore, Lua Lopez, Manuela Neumann, Parastoo Azadi, Artur Muszyński, Patricia L. M. Lang, Hernán A. Burbano, and Talia L. Karasov. 2025. “Persistent trade-offs balance competition and colonization across centuries.” <em>Submitted to PNAS.</em> <a href="https://doi.org/10.1101/2025.11.16.688059" target="_blank" rel="noopener">https://doi.org/10.1101/2025.11.16.688059</a>.
+</p>
+
+<p class="section-title"><em>Peer-Reviewed</em></p>
+
+<p class="year">2024</p>
+<p class="cite">
+<b>Backman, Talia</b>, Hernán A. Burbano, and Talia L. Karasov. 2024. “Tradeoffs and Constraints on the Evolution of Tailocins.” <em>Trends in Microbiology</em>, June. <a href="https://doi.org/10.1016/j.tim.2024.04.001" target="_blank" rel="noopener">https://doi.org/10.1016/j.tim.2024.04.001</a>.
+</p>
+
+<p class="cite">
+<b>Backman, Talia</b>, Sergio M. Latorre, Efthymia Symeonidi, Artur Muszyński, Ella Bleak, Lauren Eads, Paulina I. Martinez-Koury, et al. 2024. “A Phage Tail-like Bacteriocin Suppresses Competitors in Metapopulations of Pathogenic Bacteria.” <em>Science</em> 384 (6701): eado0713. <a href="https://doi.org/10.1126/science.ado0713" target="_blank" rel="noopener">https://doi.org/10.1126/science.ado0713</a>.
+</p>
+
+<p class="year">2022</p>
+<p class="cite">
+Bradshaw, Alexander J., <b>Talia A. Backman</b>, Virginia Ramírez-Cruz, Dale L. Forrister, Jaclyn M. Winter, Laura Guzmán-Dávalos, Giuliana Furci, Paul Stamets, and Bryn T. M. Dentinger. 2022. “DNA Authentication and Chemical Analysis of Psilocybe Mushrooms Reveal Widespread Misdeterminations in Fungaria and Inconsistencies in Metabolites.” <em>Applied and Environmental Microbiology</em> 88 (24): e0149822. <a href="https://doi.org/10.1128/aem.01498-22" target="_blank" rel="noopener">https://doi.org/10.1128/aem.01498-22</a>.
+</p>
+
+</div>
+</div>
