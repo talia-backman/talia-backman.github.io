@@ -21,32 +21,72 @@ output: html_document
 
 /* Links */
 a[target="_blank"]::after { content: ""; }
+
+/* --- NEW: Home icon grid --- */
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 22px;
+  align-items: start;
+  justify-items: center;
+  padding: 10px 0;
+}
+
+.home-tile{
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-img{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid rgba(0,0,0,0.18);
+}
+
+.home-label{
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .home-grid{ grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+}
+@media (max-width: 450px){
+  .home-grid{ grid-template-columns: 1fr; }
+}
 </style>
 
 <div class="gray">
 <div class="blue">
 
-<div class="site-nav">
-<a href="http://talia-backman.github.io/">Home</a> |
-<a href="http://talia-backman.github.io/about">About</a> |
-<a href="http://talia-backman.github.io/publications">Publications</a> |
-<a href="http://talia-backman.github.io/news">News</a> |
-<a href="http://talia-backman.github.io/contact">Contact</a>
+<div class="home-grid">
+  <a class="home-tile" href="about/">
+    <img class="home-img" src="BackmanTalia.jpg" alt="About">
+    <div class="home-label">ABOUT</div>
+  </a>
+
+  <a class="home-tile" href="publications/">
+    <img class="home-img" src="publications.png" alt="Publications">
+    <div class="home-label">PUBLICATIONS</div>
+  </a>
+
+  <a class="home-tile" href="news/">
+    <img class="home-img" src="news.png" alt="News">
+    <div class="home-label">NEWS</div>
+  </a>
+
+  <a class="home-tile" href="tbd/">
+    <img class="home-img" src="TBD.jpg" alt="TBD">
+    <div class="home-label">TBD</div>
+  </a>
 </div>
-
-<p class="section-title">Welcome</p>
-
-I’m Talia Backman, a microbial ecologist studying how bacteria compete, coexist, and assemble within host-associated communities.
-
-<div class="rule"></div>
-
-<p class="section-title">Quick links</p>
-
-- **[CV](https://docs.google.com/document/d/1NmoQ0LqRecd7NPIZX8zaRJPFfG_P8sYD2s2odYQ3khY/view){target="_blank" rel="noopener"}**
-- **[GitHub repositories](https://github.com/talia-backman){target="_blank" rel="noopener"}**
-- **[ORCID](https://orcid.org/0000-0002-1967-270X){target="_blank" rel="noopener"}**
-- **[Google Scholar](https://scholar.google.com/citations?user=QwsdEIkAAAAJ&hl=en){target="_blank" rel="noopener"}**
-- **[Bluesky](https://bsky.app/profile/taliamycota.bsky.social){target="_blank" rel="noopener"}**
 
 </div>
 </div>

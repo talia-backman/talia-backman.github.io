@@ -28,11 +28,10 @@ output: html_document
 <div class="blue">
 
 <div class="site-nav">
-<a href="http://talia-backman.github.io/">Home</a> |
 <a href="http://talia-backman.github.io/about">About</a> |
 <a href="http://talia-backman.github.io/publications">Publications</a> |
 <a href="http://talia-backman.github.io/news">News</a> |
-<a href="http://talia-backman.github.io/contact">Contact</a>
+<a href="http://talia-backman.github.io/TBD">TBD</a>
 </div>
 
 <div class="about-photo">
@@ -49,10 +48,21 @@ I completed my PhD in Molecular, Cellular, and Evolutionary Biology at the Unive
 
 <div class="rule"></div>
 
-<p class="section-title">CV & Code</p>
+<p class="section-title">Professional Links</p>
 
 - **[CV](https://docs.google.com/document/d/1NmoQ0LqRecd7NPIZX8zaRJPFfG_P8sYD2s2odYQ3khY/view){target="_blank" rel="noopener"}**
-- **[My GitHub repositories](https://github.com/talia-backman){target="_blank" rel="noopener"}**
+- **[GitHub repositories](https://github.com/talia-backman){target="_blank" rel="noopener"}**
+- **[ORCID](https://orcid.org/0000-0002-1967-270X){target="_blank" rel="noopener"}**
+- **[Google Scholar](https://scholar.google.com/citations?user=QwsdEIkAAAAJ&hl=en){target="_blank" rel="noopener"}**
+- **[Bluesky](https://bsky.app/profile/taliamycota.bsky.social){target="_blank" rel="noopener"}**
+- **[My Academic Family Tree](http://academictree.org/evolution/tree.php?pid=969006&pnodecount=4&cnodecount=2&fontsize=1){target="_blank" rel="noopener"}**
+
+<div class="rule"></div>
+
+<p class="section-title">Contact</p>
+
+Email: <a href="mailto:nbackman@wm.edu">nbackman@wm.edu</a>
+<br>
 
 </div>
 </div>
