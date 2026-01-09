@@ -83,8 +83,8 @@ a[target="_blank"]::after { content: ""; }
   </a>
 
   <a class="home-tile" href="tbd/">
-    <img class="home-img" src="TBD.jpg" alt="TBD">
-    <div class="home-label">TBD</div>
+    <img class="home-img" src="mentees.jpg" alt="MENTEES">
+    <div class="home-label">MENTEES</div>
   </a>
 </div>
 

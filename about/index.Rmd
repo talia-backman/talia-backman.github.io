@@ -31,7 +31,7 @@ output: html_document
 <a href="http://talia-backman.github.io/about">About</a> |
 <a href="http://talia-backman.github.io/publications">Publications</a> |
 <a href="http://talia-backman.github.io/news">News</a> |
-<a href="http://talia-backman.github.io/TBD">TBD</a>
+<a href="http://talia-backman.github.io/mentees">Mentees</a>
 </div>
 
 <div class="about-photo">
