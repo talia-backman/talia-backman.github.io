@@ -82,7 +82,7 @@ a[target="_blank"]::after { content: ""; }
     <div class="home-label">NEWS</div>
   </a>
 
-  <a class="home-tile" href="tbd/">
+  <a class="home-tile" href="mentees/">
     <img class="home-img" src="mentees.jpg" alt="MENTEES">
     <div class="home-label">MENTEES</div>
   </a>
